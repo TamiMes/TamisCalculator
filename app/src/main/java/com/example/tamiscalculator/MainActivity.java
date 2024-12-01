@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     public void press(View view) {
 
         Button button = (Button) view; //value of view=the button that has been pressed - stam
-        result.append(button.getText().toString());//3,5->35
+//        result.append(button.getText().toString());//3,5->35
 
 
 
