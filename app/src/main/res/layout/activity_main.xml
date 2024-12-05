@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="black"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -20,7 +20,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Hello World!" />
+            android:textColor="#020202"
+            android:textSize="100sp"
+            android:text="Tami's Calculator" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -30,14 +33,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/buttonPresent"
+            android:id="@+id/buttonlear"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/designbutton"
-            android:onClick="funcMoudulu"
-            android:text="%" />
+            android:onClick="funcClear"
+            android:text="C" />
 
         <Button
             android:id="@+id/buttonDelete"
@@ -132,7 +135,6 @@
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:background="@drawable/designbutton"
-
             android:onClick="funcMultiply"
             android:text="X" />
     </LinearLayout>
@@ -238,15 +240,6 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/buttonDot"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/designbutton"
-            android:layout_margin="10dp"
-            android:text="." />
-
-        <Button
             android:id="@+id/buttonZero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -255,7 +248,15 @@
             android:layout_margin="10dp"
             android:onClick="press"
             android:text="0" />
-
+        <Button
+            android:id="@+id/buttonPresent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/designbutton"
+            android:onClick="funcMoudulu"
+            android:text="%" />
         <Button
             android:id="@+id/buttonEqual"
             android:layout_width="wrap_content"
@@ -265,6 +266,7 @@
             android:background="@drawable/designbutton"
             android:onClick="funcEqual"
             android:text="=" />
+
     </LinearLayout>
 
 </LinearLayout>
