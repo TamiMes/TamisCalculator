@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         result.append("+");
     }
 
-    public void funcMinus(View view) {
+   public void funcMinus(View view) {
         c = '-';
         result.append("-");
     }
